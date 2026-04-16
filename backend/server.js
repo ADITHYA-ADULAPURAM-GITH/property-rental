@@ -18,6 +18,8 @@ const rentalRoutes = require('./routes/rentalRoutes');
 const paymentRoutes = require('./routes/paymentRoutes');
 const maintenanceRoutes = require('./routes/maintenanceRoutes');
 const messageRoutes = require('./routes/messageRoutes');
+const dashboardRoutes = require('./routes/dashboardRoutes');
+app.use('/api', dashboardRoutes);
 
 app.use('/api/auth', authRoutes);
 app.use('/api/properties', propertyRoutes);
